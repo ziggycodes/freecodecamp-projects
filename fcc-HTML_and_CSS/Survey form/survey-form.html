@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <head>
+    <title>Test Survey Form</title>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <h1 id='title'>Test Survey Form</h1>
+    <p id='description'>Please take your time to answer these questions.</p>
+    <form id='survey-form' method='post' action=''>
+      <fieldset>
+        <label id='name-label' for='name'>Full name <input id='name' type='text' placeholder='John Doe' required/></label>
+        <label id='email-label' for='email'>Email<input id='email' type='email' placeholder='example@example.com'required ></label>
+        <label id='number-label' for='number'>Age<input id ='number' type='number' min='18' max='50' placeholder='18'></label>
+         <label for='phnum'>Phone number<input id ='phnum' type='number' placeholder='+234...'></label>
+  
+      </fieldset>
+
+      <fieldset>
+
+        <h4>Area of interest</h4>
+      
+        <label for='phy'>Physical Sciences<input class='inline' type='radio' id='phy' name='sector' value='phy'></label>
+         <label for='arts'>Arts and crafts<input class='inline' value='arts' type='radio' id='arts' name='sector'></label>
+          <label for='business'>Business Management <input value='business' type='radio' class='inline' id='business' name='sector'></label>
+
+         <label for='dropdown'>
+           <select id='dropdown' name='geozone'>
+              <option value='0'>What zone are you from?</option>
+              <option value='1'>North-East</option>
+               <option value='2'>North-West</option>
+                <option value='3'>North-Central</option>
+                 <option value='4'>South-East</option>
+                  <option value='5'>South-West</option>
+                   <option value='6'>South-South</option>
+           </select>
+          </label>
+      </fieldset>
+      <fieldset>
+        <label for='dp'>Upload a picture <input type='file' id='dp'></label>
+        <label for='bio'>Bio<textarea placeholder='Write something about yourself' rows='3' cols='35' id= 'bio'></textarea>
+
+        <label for='privacy'>I"ve read the privacy terms <input value='agreed' class='inline' id='privacy' type='checkbox' required></label>
+
+        <label for='terms'>I accept the terms and conditions <input value='agreed' class='inline' id='terms' type='checkbox' required></label>
+
+      </fieldset>
+      <input type='submit' id ='submit'
+    </form>
+  </body>
+</html>
